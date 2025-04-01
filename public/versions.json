@@ -1,0 +1,22 @@
+[
+  {
+    "versionNumber": "0.0.1",
+    "date": "2025-04-05",
+    "title": "Initial Release",
+    "updates": [
+      "Dice Roller A",
+      "Dice Roller B",
+      "Dice Roller C"
+    ]
+  },
+  {
+    "versionNumber": "0.0.2",
+    "date": "2025-04-05",
+    "title": "Initial Release 2",
+    "updates": [
+      "Dice Roller D",
+      "Dice Roller E",
+      "Dice Roller F"
+    ]
+  }
+]
