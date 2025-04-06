@@ -1,7 +1,7 @@
 "use client"
 
 import {Box, For, Stack, Text} from "@chakra-ui/react"
-import {useVersions} from "../../src/components/version/version_control";
+import {useVersions} from "@components/version/version_control";
 
 export default function Page() {
   const versions = useVersions()
@@ -14,8 +14,8 @@ export default function Page() {
             <Text textStyle="xl" fontWeight="bold">{version.versionNumber} - {version.title}</Text>
             <Text textStyle="lg" fontWeight="bold">{version.date}</Text>
             <For each={version.updates}>
-              {(update) => (
-                <Text>{update}</Text>
+              {(update, index) => (
+                <Text key={index}>{update}</Text>
               )}
             </For>
           </Box>

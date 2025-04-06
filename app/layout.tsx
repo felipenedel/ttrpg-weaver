@@ -7,17 +7,26 @@ const inter = Inter({
   display: "swap",
 })
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export const metadata = {
+  title: "TTRPG Weaver",
+  description: "Your TTRPG Companion",
+  icons: {
+    icon: [
+      {
+        url: "/dice.webp",
+        type: "image/webp",
+      },
+    ],
+  },
+};
+
+export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html className={inter.className} suppressHydrationWarning>
-      <head />
-      <body>
-        <Provider>{children}</Provider>
-      </body>
+    <head><title></title></head>
+    <body>
+    <Provider>{children}</Provider>
+    </body>
     </html>
   )
 }

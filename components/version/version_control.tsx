@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 
 export interface Version {
   versionNumber: string;
-  date: Date;
+  date: string;
   title: string;
   updates: string[];
 }
