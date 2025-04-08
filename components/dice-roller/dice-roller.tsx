@@ -3,6 +3,7 @@
 import {Button, createListCollection, HStack, Input, Portal, Select, Text, VStack} from "@chakra-ui/react";
 import {Dice1, Dice2, Dice3, Dice4, Dice5, Dice6, Dices} from "lucide-react";
 import React, {useState} from "react";
+import {TextInput} from "@components/ui/text-input";
 
 const DiceRoller = () => {
   const diceComponents = [Dice1, Dice2, Dice3, Dice4, Dice5, Dice6];
@@ -56,14 +57,15 @@ const DiceRoller = () => {
           </Select.Positioner>
         </Portal>
       </Select.Root>
-      <Input
+      <TextInput
+        fieldName="Number of dice"
         width="200px"
         placeholder="Number of dice"
         value={diceQuantity}
-        maxLength={9999}
+        maxLength={1}
         onChange={(e) => setDiceQuantity(e.currentTarget.value)}
       >
-      </Input>
+      </TextInput>
       <Button width="200px" onClick={() => rollDice()}>
         <Dices/> Roll {diceQuantity}D6
       </Button>

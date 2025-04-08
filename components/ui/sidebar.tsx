@@ -1,6 +1,6 @@
 'use client';
 
-import {Button, Drawer, IconButton, Link, Portal, VStack,} from '@chakra-ui/react';
+import {Button, Drawer, Link, Portal, VStack,} from '@chakra-ui/react';
 import {CircleChevronLeft, CircleChevronRight} from 'lucide-react';
 
 export const Sidebar = () => {
