@@ -10,6 +10,12 @@
       ],
       "@services/*": [
         "./services/*"
+      ],
+      "@api/*": [
+        "./app/api/*"
+      ],
+      "@firestore/*": [
+        "./app/api/database/firestore/*"
       ]
     },
     "lib": [
