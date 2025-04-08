@@ -4,7 +4,7 @@ import {createReadStream} from "fs";
 import {parser} from "stream-json";
 import {streamObject} from "stream-json/streamers/StreamObject";
 
-async function upload(language: string, langData: any) {
+async function upload(language: string, langData: { names: [], places: [] }) {
   // Set the meta doc with the language field
   const langDocRef = doc(db, "reference_tables", "name_generator", "languages", language);
   await setDoc(langDocRef, {language});

@@ -5,17 +5,17 @@ export interface TextInputProps extends InputProps {
   fieldName: string;
 }
 
-export const TextInput= React.forwardRef<HTMLInputElement, TextInputProps>(
-  ({ fieldName, ...props }, ref) => {
-  return (
-    <Field.Root>
-      <Box pos="relative" w="full">
-        <Input ref={ref} className="peer" placeholder="" />
-        <Field.Label css={floatingStyles}>{fieldName}</Field.Label>
-      </Box>
-    </Field.Root>
-  )
-})
+export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
+  ({fieldName}, ref) => {
+    return (
+      <Field.Root>
+        <Box pos="relative" w="full">
+          <Input ref={ref} className="peer" placeholder=""/>
+          <Field.Label css={floatingStyles}>{fieldName}</Field.Label>
+        </Box>
+      </Field.Root>
+    )
+  })
 
 TextInput.displayName = 'TextInput';
 

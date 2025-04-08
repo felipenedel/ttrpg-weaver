@@ -1,4 +1,4 @@
-import { camelCase } from "lodash";
+import {camelCase} from "lodash";
 
 export function toPascalCase<T>(obj: Record<string, any>): T {
   const newObj: Record<string, any> = {};

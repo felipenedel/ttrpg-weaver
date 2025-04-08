@@ -1,4 +1,4 @@
-import {getDocs, Query, DocumentData} from 'firebase/firestore';
+import {DocumentData, getDocs, Query} from 'firebase/firestore';
 
 export async function getFirstDoc<T = DocumentData>(q: Query): Promise<T> {
   const snap = await getDocs(q);

@@ -1,8 +1,8 @@
 "use client";
 
-import {Button, createListCollection, HStack, Input, Portal, Select, Text, VStack} from "@chakra-ui/react";
-import {Dice1, Dice2, Dice3, Dice4, Dice5, Dice6, Dices} from "lucide-react";
+import {Button, createListCollection, HStack, Portal, Select, Text, VStack} from "@chakra-ui/react";
 import React, {useState} from "react";
+import {Dice1, Dice2, Dice3, Dice4, Dice5, Dice6, Dices} from "lucide-react";
 import {TextInput} from "@components/ui/text-input";
 
 const DiceRoller = () => {
