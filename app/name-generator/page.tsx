@@ -17,7 +17,7 @@ export default function Page() {
   }
 
   return (
-    <Box textAlign="center" fontSize="xl" pt="30vh">
+    <Box textAlign="center" fontSize="xl">
       <VStack separator={<StackSeparator/>}>
         <LanguageSelector setLanguage={setSelectedLanguage}></LanguageSelector>
         <Button onClick={generateName}>Generate New Name</Button>

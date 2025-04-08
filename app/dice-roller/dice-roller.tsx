@@ -1,39 +1,55 @@
 "use client";
 
-import {Button, createListCollection, HStack, Portal, Select, Text, VStack} from "@chakra-ui/react";
+import {Button, createListCollection, DataList, ListCollection, Portal, Select, VStack} from "@chakra-ui/react";
 import React, {useState} from "react";
-import {Dice1, Dice2, Dice3, Dice4, Dice5, Dice6, Dices} from "lucide-react";
-import {TextInput} from "@components/ui/text-input";
+import {Dices} from "lucide-react";
+import {sortBy} from "lodash";
 
-const DiceRoller = () => {
-  const diceComponents = [Dice1, Dice2, Dice3, Dice4, Dice5, Dice6];
+const D6Roller = () => {
+  type DiceType = {
+    label: string;
+    value: number;
+    score?: number;
+  }
 
-  const diceTypes = createListCollection({
+  const diceOptions: ListCollection<DiceType> = createListCollection({
     items: [
-      {label: "d2", value: "2"},
-      {label: "d4", value: "4"},
-      {label: "d6", value: "6"},
-      {label: "d8", value: "8"},
-      {label: "d10", value: "10"},
-      {label: "d12", value: "12"},
-      {label: "d20", value: "20"},
-      {label: "d100", value: "100"}
+      {label: "d4", value: 4},
+      {label: "d6", value: 6},
+      {label: "d8", value: 8},
+      {label: "d10", value: 10},
+      {label: "d12", value: 12},
+      {label: "d20", value: 20},
+      {label: "d100", value: 100}
     ],
   })
 
-  const rollDice = () => {
-    const currentRolledDice = Array.from({length: parseInt(diceQuantity)}, () =>
-      Math.floor(Math.random() * 6 + 1)
-    );
-    setRolledDice(currentRolledDice);
-  };
+  const [selectedDiceTypes, setSelectedDiceTypes] = useState<DiceType[]>([]);
+  const [rolledDice, setRolledDice] = useState<DiceType[]>([]);
 
-  const [diceQuantity, setDiceQuantity] = useState("2");
-  const [rolledDice, setRolledDice] = useState<number[]>([]);
+  const rollDice = () => {
+    const rolls: DiceType[] = []
+
+    const sortedDiceTypes = sortBy(selectedDiceTypes, 'value');
+    for (const diceType of sortedDiceTypes) {
+      const roll = Math.floor((Math.random() * diceType.value) + 1)
+
+      rolls.push({label: `d${diceType.value}`, value: roll, score: Number((roll / diceType.value).toFixed(2))});
+    }
+
+    setRolledDice(rolls)
+  }
 
   return (
     <VStack>
-      <Select.Root collection={diceTypes} size="sm" width="120px">
+      <Select.Root
+        multiple
+        collection={diceOptions}
+        size="sm"
+        width="200px"
+        onValueChange={(details) => {
+          setSelectedDiceTypes(details.items);
+        }}>
         <Select.HiddenSelect/>
         <Select.Label>Select dice type</Select.Label>
         <Select.Control>
@@ -41,15 +57,16 @@ const DiceRoller = () => {
             <Select.ValueText placeholder="Select dice type"/>
           </Select.Trigger>
           <Select.IndicatorGroup>
+            <Select.ClearTrigger/>
             <Select.Indicator/>
           </Select.IndicatorGroup>
         </Select.Control>
         <Portal>
           <Select.Positioner>
             <Select.Content>
-              {diceTypes.items.map((diceType) => (
-                <Select.Item item={diceType} key={diceType.value}>
-                  {diceType.label}
+              {diceOptions.items.map((diceOption) => (
+                <Select.Item item={diceOption} key={diceOption.value}>
+                  {diceOption.label}
                   <Select.ItemIndicator/>
                 </Select.Item>
               ))}
@@ -57,29 +74,21 @@ const DiceRoller = () => {
           </Select.Positioner>
         </Portal>
       </Select.Root>
-      <TextInput
-        fieldName="Number of dice"
-        width="200px"
-        placeholder="Number of dice"
-        value={diceQuantity}
-        maxLength={1}
-        onChange={(e) => setDiceQuantity(e.currentTarget.value)}
-      >
-      </TextInput>
       <Button width="200px" onClick={() => rollDice()}>
-        <Dices/> Roll {diceQuantity}D6
+        <Dices/> Roll
       </Button>
-      <HStack>
-        {rolledDice.map((id, index) => {
-          const DiceComponent = diceComponents[id - 1];
-          return <DiceComponent key={index}/>;
+      <DataList.Root orientation="horizontal" divideY="1px" maxW="md">
+        {rolledDice.map((dice) => {
+          return (
+            <DataList.Item key={dice.label}>
+              <DataList.ItemLabel>{dice.label}</DataList.ItemLabel>
+              <DataList.ItemValue>{dice.value} / {dice.score}</DataList.ItemValue>
+            </DataList.Item>
+          )
         })}
-      </HStack>
-      <Text fontSize="xl">
-        {rolledDice.length > 0 && `Total: ${rolledDice.reduce((total, num) => total + num, 0)}`}
-      </Text>
+      </DataList.Root>
     </VStack>
   )
 };
 
-export default DiceRoller;
+export default D6Roller;
