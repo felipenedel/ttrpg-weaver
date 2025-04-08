@@ -1,11 +1,6 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import {getApp, getApps, initializeApp} from "firebase/app";
+import {connectFirestoreEmulator, getFirestore} from "firebase/firestore";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBXrpCIcdk90sfaiGM7l4dW-ti4HcSri80",
   authDomain: "ttrpg-weaver.firebaseapp.com",
@@ -23,8 +18,11 @@ const firebaseConfig = {
 //   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 // };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+
 const db = getFirestore(app);
 
-export { db };
+if (process.env.NEXT_PUBLIC_USE_FIREBASE_EMULATOR === "true" && typeof window !== "undefined") {
+  connectFirestoreEmulator(db, "localhost", 8080);
+  console.info("🔥 Using Firestore Emulator");
+}
