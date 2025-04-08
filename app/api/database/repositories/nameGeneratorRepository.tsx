@@ -2,6 +2,7 @@ import {collection, limit, query, where,} from 'firebase/firestore';
 import {db} from '@firestore/firestoreClient';
 import {getFirstDoc} from '@repositories/getFirstDoc';
 import {toPascalCase} from "@services/pascalCase";
+import {capitalize} from "lodash";
 
 const LANGUAGES = ["arabic", "chinese", "english", "greek", "indian", "japanese", "latin", "nigerian", "russian", "spanish"];
 
@@ -19,7 +20,7 @@ const getLanguage = (language: string | null) => {
 }
 
 export const NameGeneratorRepository = {
-  async getRandomName(language: string | null): Promise<NameGeneratorType> {
+  async perform(language: string | null): Promise<NameGeneratorType> {
     const languageCollection = getLanguage(language);
     const namesRef = collection(db, `reference_tables/name_generator/languages/${languageCollection}/names`);
     const placesRef = collection(db, `reference_tables/name_generator/languages/${languageCollection}/places`);
@@ -44,6 +45,6 @@ export const NameGeneratorRepository = {
     const nameData = await getFirstDoc<NameGeneratorType>(nameQuery);
     const placeData = await getFirstDoc<NameGeneratorType>(placeQuery);
 
-    return {...toPascalCase(nameData), ...toPascalCase(placeData), language: languageCollection} as NameGeneratorType;
+    return {...toPascalCase(nameData), ...toPascalCase(placeData), language: capitalize(languageCollection)} as NameGeneratorType;
   },
 };

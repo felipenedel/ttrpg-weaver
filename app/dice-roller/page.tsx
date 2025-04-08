@@ -1,5 +1,5 @@
 import {Box,} from "@chakra-ui/react"
-import DiceRoller from "@components/dice-roller/dice-roller";
+import DiceRoller from "./dice-roller";
 
 export default function Page() {
   return (
