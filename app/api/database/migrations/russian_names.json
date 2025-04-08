@@ -1,0 +1,177 @@
+[
+  {
+    "name_male": "Aleksandr",
+    "name_female": "Aleksandra",
+    "surname": "Abelev",
+    "roll_min": 1,
+    "roll_max": 4
+  },
+  {
+    "name_male": "Andrei",
+    "name_female": "Anastasia",
+    "surname": "Bobrikov",
+    "roll_min": 5,
+    "roll_max": 8
+  },
+  {
+    "name_male": "Arkady",
+    "name_female": "Anja",
+    "surname": "Chemerkin",
+    "roll_min": 9,
+    "roll_max": 12
+  },
+  {
+    "name_male": "Boris",
+    "name_female": "Catarina",
+    "surname": "Gogunov",
+    "roll_min": 13,
+    "roll_max": 16
+  },
+  {
+    "name_male": "Dmitri",
+    "name_female": "Devora",
+    "surname": "Gurov",
+    "roll_min": 17,
+    "roll_max": 20
+  },
+  {
+    "name_male": "Dominik",
+    "name_female": "Dima",
+    "surname": "Iltchenko",
+    "roll_min": 21,
+    "roll_max": 24
+  },
+  {
+    "name_male": "Grigory",
+    "name_female": "Ekaterina",
+    "surname": "Kavelin",
+    "roll_min": 25,
+    "roll_max": 28
+  },
+  {
+    "name_male": "Igor",
+    "name_female": "Eva",
+    "surname": "Komarov",
+    "roll_min": 29,
+    "roll_max": 32
+  },
+  {
+    "name_male": "Ilya",
+    "name_female": "Irina",
+    "surname": "Korovin",
+    "roll_min": 33,
+    "roll_max": 36
+  },
+  {
+    "name_male": "Ivan",
+    "name_female": "Karolina",
+    "surname": "Kurnikov",
+    "roll_min": 37,
+    "roll_max": 40
+  },
+  {
+    "name_male": "Kiril",
+    "name_female": "Katlina",
+    "surname": "Lebedev",
+    "roll_min": 41,
+    "roll_max": 44
+  },
+  {
+    "name_male": "Konstantin",
+    "name_female": "Kira",
+    "surname": "Litvak",
+    "roll_min": 45,
+    "roll_max": 48
+  },
+  {
+    "name_male": "Leonid",
+    "name_female": "Ludmilla",
+    "surname": "Mekhdiev",
+    "roll_min": 49,
+    "roll_max": 52
+  },
+  {
+    "name_male": "Nikolai",
+    "name_female": "Mara",
+    "surname": "Muraviov",
+    "roll_min": 53,
+    "roll_max": 56
+  },
+  {
+    "name_male": "Oleg",
+    "name_female": "Nadezdha",
+    "surname": "Nikitin",
+    "roll_min": 57,
+    "roll_max": 60
+  },
+  {
+    "name_male": "Pavel",
+    "name_female": "Nastassia",
+    "surname": "Ortov",
+    "roll_min": 61,
+    "roll_max": 64
+  },
+  {
+    "name_male": "Petr",
+    "name_female": "Natalya",
+    "surname": "Peshkov",
+    "roll_min": 65,
+    "roll_max": 68
+  },
+  {
+    "name_male": "Sergei",
+    "name_female": "Oksana",
+    "surname": "Romasko",
+    "roll_min": 69,
+    "roll_max": 72
+  },
+  {
+    "name_male": "Stepan",
+    "name_female": "Olena",
+    "surname": "Shvedov",
+    "roll_min": 73,
+    "roll_max": 76
+  },
+  {
+    "name_male": "Valentin",
+    "name_female": "Olga",
+    "surname": "Sikorski",
+    "roll_min": 77,
+    "roll_max": 80
+  },
+  {
+    "name_male": "Vasily",
+    "name_female": "Sofia",
+    "surname": "Stolypin",
+    "roll_min": 81,
+    "roll_max": 84
+  },
+  {
+    "name_male": "Viktor",
+    "name_female": "Svetlana",
+    "surname": "Turov",
+    "roll_min": 85,
+    "roll_max": 88
+  },
+  {
+    "name_male": "Yakov",
+    "name_female": "Tatyana",
+    "surname": "Volokh",
+    "roll_min": 89,
+    "roll_max": 92
+  },
+  {
+    "name_male": "Yegor",
+    "name_female": "Vilma",
+    "surname": "Zaitsev",
+    "roll_min": 93,
+    "roll_max": 96
+  },
+  {
+    "name_male": "Yuri",
+    "name_female": "Yelena",
+    "surname": "Zhukov",
+    "roll_min": 97,
+    "roll_max": 100
+  }
+]

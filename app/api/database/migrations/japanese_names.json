@@ -1,0 +1,177 @@
+[
+  {
+    "name_male": "Akira",
+    "name_female": "Aemi",
+    "surname": "Abe",
+    "roll_min": 1,
+    "roll_max": 4
+  },
+  {
+    "name_male": "Daisuke",
+    "name_female": "Airi",
+    "surname": "Arakaki",
+    "roll_min": 5,
+    "roll_max": 8
+  },
+  {
+    "name_male": "Fukashi",
+    "name_female": "Ako",
+    "surname": "Endo",
+    "roll_min": 9,
+    "roll_max": 12
+  },
+  {
+    "name_male": "Goro",
+    "name_female": "Ayu",
+    "surname": "Fujiwara",
+    "roll_min": 13,
+    "roll_max": 16
+  },
+  {
+    "name_male": "Hiro",
+    "name_female": "Chikaze",
+    "surname": "Goto",
+    "roll_min": 17,
+    "roll_max": 20
+  },
+  {
+    "name_male": "Hiroya",
+    "name_female": "Eriko",
+    "surname": "Ito",
+    "roll_min": 21,
+    "roll_max": 24
+  },
+  {
+    "name_male": "Hotaka",
+    "name_female": "Hina",
+    "surname": "Kikuchi",
+    "roll_min": 25,
+    "roll_max": 28
+  },
+  {
+    "name_male": "Katsu",
+    "name_female": "Kaori",
+    "surname": "Kinjo",
+    "roll_min": 29,
+    "roll_max": 32
+  },
+  {
+    "name_male": "Katsuto",
+    "name_female": "Keiko",
+    "surname": "Kobayashi",
+    "roll_min": 33,
+    "roll_max": 36
+  },
+  {
+    "name_male": "Keishuu",
+    "name_female": "Kyouka",
+    "surname": "Koga",
+    "roll_min": 37,
+    "roll_max": 40
+  },
+  {
+    "name_male": "Kyuuto",
+    "name_female": "Mayumi",
+    "surname": "Komatsu",
+    "roll_min": 41,
+    "roll_max": 44
+  },
+  {
+    "name_male": "Mikiya",
+    "name_female": "Miho",
+    "surname": "Maeda",
+    "roll_min": 45,
+    "roll_max": 48
+  },
+  {
+    "name_male": "Mitsunobu",
+    "name_female": "Namiko",
+    "surname": "Nakamura",
+    "roll_min": 49,
+    "roll_max": 52
+  },
+  {
+    "name_male": "Mitsuru",
+    "name_female": "Natsu",
+    "surname": "Narita",
+    "roll_min": 53,
+    "roll_max": 56
+  },
+  {
+    "name_male": "Naruhiko",
+    "name_female": "Nobuko",
+    "surname": "Ochi",
+    "roll_min": 57,
+    "roll_max": 60
+  },
+  {
+    "name_male": "Nobu",
+    "name_female": "Rei",
+    "surname": "Oshiro",
+    "roll_min": 61,
+    "roll_max": 64
+  },
+  {
+    "name_male": "Shigeo",
+    "name_female": "Ririsa",
+    "surname": "Saito",
+    "roll_min": 65,
+    "roll_max": 68
+  },
+  {
+    "name_male": "Shigeto",
+    "name_female": "Sakimi",
+    "surname": "Sakamoto",
+    "roll_min": 69,
+    "roll_max": 72
+  },
+  {
+    "name_male": "Shou",
+    "name_female": "Shihoko",
+    "surname": "Sato",
+    "roll_min": 73,
+    "roll_max": 76
+  },
+  {
+    "name_male": "Shuji",
+    "name_female": "Shika",
+    "surname": "Suzuki",
+    "roll_min": 77,
+    "roll_max": 80
+  },
+  {
+    "name_male": "Takaharu",
+    "name_female": "Tsukiko",
+    "surname": "Takahashi",
+    "roll_min": 81,
+    "roll_max": 84
+  },
+  {
+    "name_male": "Teruaki",
+    "name_female": "Tsuzune",
+    "surname": "Tanaka",
+    "roll_min": 85,
+    "roll_max": 88
+  },
+  {
+    "name_male": "Tetsushi",
+    "name_female": "Yoriko",
+    "surname": "Watanabe",
+    "roll_min": 89,
+    "roll_max": 92
+  },
+  {
+    "name_male": "Tsukasa",
+    "name_female": "Yorimi",
+    "surname": "Yamamoto",
+    "roll_min": 93,
+    "roll_max": 96
+  },
+  {
+    "name_male": "Yasuharu",
+    "name_female": "Yoshiko",
+    "surname": "Yamasaki",
+    "roll_min": 97,
+    "roll_max": 100
+  }
+]

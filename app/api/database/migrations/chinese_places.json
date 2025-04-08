@@ -1,0 +1,252 @@
+[
+  {
+    "place_name": "Andong",
+    "roll_min": 1,
+    "roll_max": 2
+  },
+  {
+    "place_name": "Anqing",
+    "roll_min": 3,
+    "roll_max": 4
+  },
+  {
+    "place_name": "Anshan",
+    "roll_min": 5,
+    "roll_max": 6
+  },
+  {
+    "place_name": "Chaoyang",
+    "roll_min": 7,
+    "roll_max": 8
+  },
+  {
+    "place_name": "Chaozhou",
+    "roll_min": 9,
+    "roll_max": 10
+  },
+  {
+    "place_name": "Chifeng",
+    "roll_min": 11,
+    "roll_max": 12
+  },
+  {
+    "place_name": "Dalian",
+    "roll_min": 13,
+    "roll_max": 14
+  },
+  {
+    "place_name": "Dunhuang",
+    "roll_min": 15,
+    "roll_max": 16
+  },
+  {
+    "place_name": "Fengjia",
+    "roll_min": 17,
+    "roll_max": 18
+  },
+  {
+    "place_name": "Fengtian",
+    "roll_min": 19,
+    "roll_max": 20
+  },
+  {
+    "place_name": "Fuliang",
+    "roll_min": 21,
+    "roll_max": 22
+  },
+  {
+    "place_name": "Fushun",
+    "roll_min": 23,
+    "roll_max": 24
+  },
+  {
+    "place_name": "Gansu",
+    "roll_min": 25,
+    "roll_max": 26
+  },
+  {
+    "place_name": "Ganzhou",
+    "roll_min": 27,
+    "roll_max": 28
+  },
+  {
+    "place_name": "Guizhou",
+    "roll_min": 29,
+    "roll_max": 30
+  },
+  {
+    "place_name": "Hotan",
+    "roll_min": 31,
+    "roll_max": 32
+  },
+  {
+    "place_name": "Hunan",
+    "roll_min": 33,
+    "roll_max": 34
+  },
+  {
+    "place_name": "Jinan",
+    "roll_min": 35,
+    "roll_max": 36
+  },
+  {
+    "place_name": "Jingdezhen",
+    "roll_min": 37,
+    "roll_max": 38
+  },
+  {
+    "place_name": "Jinxi",
+    "roll_min": 39,
+    "roll_max": 40
+  },
+  {
+    "place_name": "Jinzhou",
+    "roll_min": 41,
+    "roll_max": 42
+  },
+  {
+    "place_name": "Kunming",
+    "roll_min": 43,
+    "roll_max": 44
+  },
+  {
+    "place_name": "Liaoning",
+    "roll_min": 45,
+    "roll_max": 46
+  },
+  {
+    "place_name": "Linyi",
+    "roll_min": 47,
+    "roll_max": 48
+  },
+  {
+    "place_name": "Lushun",
+    "roll_min": 49,
+    "roll_max": 50
+  },
+  {
+    "place_name": "Luzhou",
+    "roll_min": 51,
+    "roll_max": 52
+  },
+  {
+    "place_name": "Ningxia",
+    "roll_min": 53,
+    "roll_max": 54
+  },
+  {
+    "place_name": "Pingxiang",
+    "roll_min": 55,
+    "roll_max": 56
+  },
+  {
+    "place_name": "Pizhou",
+    "roll_min": 57,
+    "roll_max": 58
+  },
+  {
+    "place_name": "Qidong",
+    "roll_min": 59,
+    "roll_max": 60
+  },
+  {
+    "place_name": "Qingdao",
+    "roll_min": 61,
+    "roll_max": 62
+  },
+  {
+    "place_name": "Qinghai",
+    "roll_min": 63,
+    "roll_max": 64
+  },
+  {
+    "place_name": "Rehe",
+    "roll_min": 65,
+    "roll_max": 66
+  },
+  {
+    "place_name": "Shanxi",
+    "roll_min": 67,
+    "roll_max": 68
+  },
+  {
+    "place_name": "Taiyuan",
+    "roll_min": 69,
+    "roll_max": 70
+  },
+  {
+    "place_name": "Tengzhou",
+    "roll_min": 71,
+    "roll_max": 72
+  },
+  {
+    "place_name": "Urumqi",
+    "roll_min": 73,
+    "roll_max": 74
+  },
+  {
+    "place_name": "Weifang",
+    "roll_min": 75,
+    "roll_max": 76
+  },
+  {
+    "place_name": "Wugang",
+    "roll_min": 77,
+    "roll_max": 78
+  },
+  {
+    "place_name": "Wuxi",
+    "roll_min": 79,
+    "roll_max": 80
+  },
+  {
+    "place_name": "Xiamen",
+    "roll_min": 81,
+    "roll_max": 82
+  },
+  {
+    "place_name": "Xian",
+    "roll_min": 83,
+    "roll_max": 84
+  },
+  {
+    "place_name": "Xikang",
+    "roll_min": 85,
+    "roll_max": 86
+  },
+  {
+    "place_name": "Xining",
+    "roll_min": 87,
+    "roll_max": 88
+  },
+  {
+    "place_name": "Xinjiang",
+    "roll_min": 89,
+    "roll_max": 90
+  },
+  {
+    "place_name": "Yidu",
+    "roll_min": 91,
+    "roll_max": 92
+  },
+  {
+    "place_name": "Yingkou",
+    "roll_min": 93,
+    "roll_max": 94
+  },
+  {
+    "place_name": "Yuxi",
+    "roll_min": 95,
+    "roll_max": 96
+  },
+  {
+    "place_name": "Zigong",
+    "roll_min": 97,
+    "roll_max": 98
+  },
+  {
+    "place_name": "Zoige",
+    "roll_min": 99,
+    "roll_max": 100
+  }
+]

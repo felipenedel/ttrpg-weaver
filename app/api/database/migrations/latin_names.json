@@ -1,0 +1,177 @@
+[
+  {
+    "name_male": "Agrippa",
+    "name_female": "Appia",
+    "surname": "Antius",
+    "roll_min": 1,
+    "roll_max": 4
+  },
+  {
+    "name_male": "Appius",
+    "name_female": "Aula",
+    "surname": "Aurius",
+    "roll_min": 5,
+    "roll_max": 8
+  },
+  {
+    "name_male": "Aulus",
+    "name_female": "Caesula",
+    "surname": "Barbatius",
+    "roll_min": 9,
+    "roll_max": 12
+  },
+  {
+    "name_male": "Caeso",
+    "name_female": "Decima",
+    "surname": "Calidius",
+    "roll_min": 13,
+    "roll_max": 16
+  },
+  {
+    "name_male": "Decimus",
+    "name_female": "Fausta",
+    "surname": "Cornelius",
+    "roll_min": 17,
+    "roll_max": 20
+  },
+  {
+    "name_male": "Faustus",
+    "name_female": "Gaia",
+    "surname": "Decius",
+    "roll_min": 21,
+    "roll_max": 24
+  },
+  {
+    "name_male": "Gaius",
+    "name_female": "Gnaea",
+    "surname": "Fabius",
+    "roll_min": 25,
+    "roll_max": 28
+  },
+  {
+    "name_male": "Gnaeus",
+    "name_female": "Hosta",
+    "surname": "Flavius",
+    "roll_min": 29,
+    "roll_max": 32
+  },
+  {
+    "name_male": "Hostus",
+    "name_female": "Lucia",
+    "surname": "Galerius",
+    "roll_min": 33,
+    "roll_max": 36
+  },
+  {
+    "name_male": "Lucius",
+    "name_female": "Maio",
+    "surname": "Horatius",
+    "roll_min": 37,
+    "roll_max": 40
+  },
+  {
+    "name_male": "Mamercus",
+    "name_female": "Marcia",
+    "surname": "Julius",
+    "roll_min": 41,
+    "roll_max": 44
+  },
+  {
+    "name_male": "Manius",
+    "name_female": "Maxima",
+    "surname": "Juventius",
+    "roll_min": 45,
+    "roll_max": 48
+  },
+  {
+    "name_male": "Marcus",
+    "name_female": "Mettia",
+    "surname": "Licinius",
+    "roll_min": 49,
+    "roll_max": 52
+  },
+  {
+    "name_male": "Mettius",
+    "name_female": "Nona",
+    "surname": "Marius",
+    "roll_min": 53,
+    "roll_max": 56
+  },
+  {
+    "name_male": "Nonus",
+    "name_female": "Numeria",
+    "surname": "Minicius",
+    "roll_min": 57,
+    "roll_max": 60
+  },
+  {
+    "name_male": "Numerius",
+    "name_female": "Octavia",
+    "surname": "Nerius",
+    "roll_min": 61,
+    "roll_max": 64
+  },
+  {
+    "name_male": "Opiter",
+    "name_female": "Postuma",
+    "surname": "Octavius",
+    "roll_min": 65,
+    "roll_max": 68
+  },
+  {
+    "name_male": "Paulus",
+    "name_female": "Prima",
+    "surname": "Pompeius",
+    "roll_min": 69,
+    "roll_max": 72
+  },
+  {
+    "name_male": "Proculus",
+    "name_female": "Procula",
+    "surname": "Quinctius",
+    "roll_min": 73,
+    "roll_max": 76
+  },
+  {
+    "name_male": "Publius",
+    "name_female": "Septima",
+    "surname": "Rutilius",
+    "roll_min": 77,
+    "roll_max": 80
+  },
+  {
+    "name_male": "Quintus",
+    "name_female": "Servia",
+    "surname": "Sextius",
+    "roll_min": 81,
+    "roll_max": 84
+  },
+  {
+    "name_male": "Servius",
+    "name_female": "Tertia",
+    "surname": "Titius",
+    "roll_min": 85,
+    "roll_max": 88
+  },
+  {
+    "name_male": "Tiberius",
+    "name_female": "Tiberia",
+    "surname": "Ulpius",
+    "roll_min": 89,
+    "roll_max": 92
+  },
+  {
+    "name_male": "Titus",
+    "name_female": "Titia",
+    "surname": "Valerius",
+    "roll_min": 93,
+    "roll_max": 96
+  },
+  {
+    "name_male": "Volescus",
+    "name_female": "Vibia",
+    "surname": "Vitellius",
+    "roll_min": 97,
+    "roll_max": 100
+  }
+]

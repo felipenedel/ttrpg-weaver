@@ -1,0 +1,252 @@
+[
+  {
+    "place_name": "Bando",
+    "roll_min": 1,
+    "roll_max": 2
+  },
+  {
+    "place_name": "Chikuma",
+    "roll_min": 3,
+    "roll_max": 4
+  },
+  {
+    "place_name": "Chikusei",
+    "roll_min": 5,
+    "roll_max": 6
+  },
+  {
+    "place_name": "Chino",
+    "roll_min": 7,
+    "roll_max": 8
+  },
+  {
+    "place_name": "Hitachi",
+    "roll_min": 9,
+    "roll_max": 10
+  },
+  {
+    "place_name": "Hitachinaka",
+    "roll_min": 11,
+    "roll_max": 12
+  },
+  {
+    "place_name": "Hitachiomiya",
+    "roll_min": 13,
+    "roll_max": 14
+  },
+  {
+    "place_name": "Hitachiota",
+    "roll_min": 15,
+    "roll_max": 16
+  },
+  {
+    "place_name": "Iida",
+    "roll_min": 17,
+    "roll_max": 18
+  },
+  {
+    "place_name": "Iiyama",
+    "roll_min": 19,
+    "roll_max": 20
+  },
+  {
+    "place_name": "Ina",
+    "roll_min": 21,
+    "roll_max": 22
+  },
+  {
+    "place_name": "Inashiki",
+    "roll_min": 23,
+    "roll_max": 24
+  },
+  {
+    "place_name": "Ishioka",
+    "roll_min": 25,
+    "roll_max": 26
+  },
+  {
+    "place_name": "Itako",
+    "roll_min": 27,
+    "roll_max": 28
+  },
+  {
+    "place_name": "Kamisu",
+    "roll_min": 29,
+    "roll_max": 30
+  },
+  {
+    "place_name": "Kasama",
+    "roll_min": 31,
+    "roll_max": 32
+  },
+  {
+    "place_name": "Kashima",
+    "roll_min": 33,
+    "roll_max": 34
+  },
+  {
+    "place_name": "Kasumigaura",
+    "roll_min": 35,
+    "roll_max": 36
+  },
+  {
+    "place_name": "Kitaibaraki",
+    "roll_min": 37,
+    "roll_max": 38
+  },
+  {
+    "place_name": "Kiyose",
+    "roll_min": 39,
+    "roll_max": 40
+  },
+  {
+    "place_name": "Koga",
+    "roll_min": 41,
+    "roll_max": 42
+  },
+  {
+    "place_name": "Komagane",
+    "roll_min": 43,
+    "roll_max": 44
+  },
+  {
+    "place_name": "Komoro",
+    "roll_min": 45,
+    "roll_max": 46
+  },
+  {
+    "place_name": "Matsumoto",
+    "roll_min": 47,
+    "roll_max": 48
+  },
+  {
+    "place_name": "Mito",
+    "roll_min": 49,
+    "roll_max": 50
+  },
+  {
+    "place_name": "Mitsukaido",
+    "roll_min": 51,
+    "roll_max": 52
+  },
+  {
+    "place_name": "Moriya",
+    "roll_min": 53,
+    "roll_max": 54
+  },
+  {
+    "place_name": "Nagano",
+    "roll_min": 55,
+    "roll_max": 56
+  },
+  {
+    "place_name": "Naka",
+    "roll_min": 57,
+    "roll_max": 58
+  },
+  {
+    "place_name": "Nakano",
+    "roll_min": 59,
+    "roll_max": 60
+  },
+  {
+    "place_name": "Ogi",
+    "roll_min": 61,
+    "roll_max": 62
+  },
+  {
+    "place_name": "Okaya",
+    "roll_min": 63,
+    "roll_max": 64
+  },
+  {
+    "place_name": "Omachi",
+    "roll_min": 65,
+    "roll_max": 66
+  },
+  {
+    "place_name": "Ryugasaki",
+    "roll_min": 67,
+    "roll_max": 68
+  },
+  {
+    "place_name": "Saku",
+    "roll_min": 69,
+    "roll_max": 70
+  },
+  {
+    "place_name": "Settsu",
+    "roll_min": 71,
+    "roll_max": 72
+  },
+  {
+    "place_name": "Shimotsuma",
+    "roll_min": 73,
+    "roll_max": 74
+  },
+  {
+    "place_name": "Shiojiri",
+    "roll_min": 75,
+    "roll_max": 76
+  },
+  {
+    "place_name": "Suwa",
+    "roll_min": 77,
+    "roll_max": 78
+  },
+  {
+    "place_name": "Suzaka",
+    "roll_min": 79,
+    "roll_max": 80
+  },
+  {
+    "place_name": "Takahagi",
+    "roll_min": 81,
+    "roll_max": 82
+  },
+  {
+    "place_name": "Takeo",
+    "roll_min": 83,
+    "roll_max": 84
+  },
+  {
+    "place_name": "Tomi",
+    "roll_min": 85,
+    "roll_max": 86
+  },
+  {
+    "place_name": "Toride",
+    "roll_min": 87,
+    "roll_max": 88
+  },
+  {
+    "place_name": "Tsuchiura",
+    "roll_min": 89,
+    "roll_max": 90
+  },
+  {
+    "place_name": "Tsukuba",
+    "roll_min": 91,
+    "roll_max": 92
+  },
+  {
+    "place_name": "Ueda",
+    "roll_min": 93,
+    "roll_max": 94
+  },
+  {
+    "place_name": "Ushiku",
+    "roll_min": 95,
+    "roll_max": 96
+  },
+  {
+    "place_name": "Yoshikawa",
+    "roll_min": 97,
+    "roll_max": 98
+  },
+  {
+    "place_name": "Yuki",
+    "roll_min": 99,
+    "roll_max": 100
+  }
+]

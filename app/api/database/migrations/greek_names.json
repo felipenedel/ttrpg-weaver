@@ -1,0 +1,177 @@
+[
+  {
+    "name_male": "Alexander",
+    "name_female": "Alexandra",
+    "surname": "Andreas",
+    "roll_min": 1,
+    "roll_max": 4
+  },
+  {
+    "name_male": "Alexius",
+    "name_female": "Amalia",
+    "surname": "Argyros",
+    "roll_min": 5,
+    "roll_max": 8
+  },
+  {
+    "name_male": "Anastasius",
+    "name_female": "Callisto",
+    "surname": "Dimitriou",
+    "roll_min": 9,
+    "roll_max": 12
+  },
+  {
+    "name_male": "Christodoulos",
+    "name_female": "Charis",
+    "surname": "Floros",
+    "roll_min": 13,
+    "roll_max": 16
+  },
+  {
+    "name_male": "Christos",
+    "name_female": "Chloe",
+    "surname": "Gavras",
+    "roll_min": 17,
+    "roll_max": 20
+  },
+  {
+    "name_male": "Damian",
+    "name_female": "Dorothea",
+    "surname": "Ioannidis",
+    "roll_min": 21,
+    "roll_max": 24
+  },
+  {
+    "name_male": "Dimitris",
+    "name_female": "Elena",
+    "surname": "Katsaros",
+    "roll_min": 25,
+    "roll_max": 28
+  },
+  {
+    "name_male": "Dysmas",
+    "name_female": "Eudoxia",
+    "surname": "Kyrkos",
+    "roll_min": 29,
+    "roll_max": 32
+  },
+  {
+    "name_male": "Elias",
+    "name_female": "Giada",
+    "surname": "Leventis",
+    "roll_min": 33,
+    "roll_max": 36
+  },
+  {
+    "name_male": "Giorgos",
+    "name_female": "Helena",
+    "surname": "Makris",
+    "roll_min": 37,
+    "roll_max": 40
+  },
+  {
+    "name_male": "Ioannis",
+    "name_female": "Ioanna",
+    "surname": "Metaxas",
+    "roll_min": 41,
+    "roll_max": 44
+  },
+  {
+    "name_male": "Konstantinos",
+    "name_female": "Lydia",
+    "surname": "Nikolaidis",
+    "roll_min": 45,
+    "roll_max": 48
+  },
+  {
+    "name_male": "Lambros",
+    "name_female": "Melania",
+    "surname": "Pallis",
+    "roll_min": 49,
+    "roll_max": 52
+  },
+  {
+    "name_male": "Leonidas",
+    "name_female": "Melissa",
+    "surname": "Pappas",
+    "roll_min": 53,
+    "roll_max": 56
+  },
+  {
+    "name_male": "Marcos",
+    "name_female": "Nika",
+    "surname": "Petrou",
+    "roll_min": 57,
+    "roll_max": 60
+  },
+  {
+    "name_male": "Miltiades",
+    "name_female": "Nikolina",
+    "surname": "Raptis",
+    "roll_min": 61,
+    "roll_max": 64
+  },
+  {
+    "name_male": "Nestor",
+    "name_female": "Olympias",
+    "surname": "Simonides",
+    "roll_min": 65,
+    "roll_max": 68
+  },
+  {
+    "name_male": "Nikos",
+    "name_female": "Philippa",
+    "surname": "Spiros",
+    "roll_min": 69,
+    "roll_max": 72
+  },
+  {
+    "name_male": "Orestes",
+    "name_female": "Phoebe",
+    "surname": "Stavros",
+    "roll_min": 73,
+    "roll_max": 76
+  },
+  {
+    "name_male": "Petros",
+    "name_female": "Sophia",
+    "surname": "Stephanidis",
+    "roll_min": 77,
+    "roll_max": 80
+  },
+  {
+    "name_male": "Simon",
+    "name_female": "Theodora",
+    "surname": "Stratigos",
+    "roll_min": 81,
+    "roll_max": 84
+  },
+  {
+    "name_male": "Stavros",
+    "name_female": "Valentina",
+    "surname": "Terzis",
+    "roll_min": 85,
+    "roll_max": 88
+  },
+  {
+    "name_male": "Theodore",
+    "name_female": "Valeria",
+    "surname": "Theodorou",
+    "roll_min": 89,
+    "roll_max": 92
+  },
+  {
+    "name_male": "Vassilios",
+    "name_female": "Yianna",
+    "surname": "Vasiliadis",
+    "roll_min": 93,
+    "roll_max": 96
+  },
+  {
+    "name_male": "Yannis",
+    "name_female": "Zoe",
+    "surname": "Yannakakis",
+    "roll_min": 97,
+    "roll_max": 100
+  }
+]
