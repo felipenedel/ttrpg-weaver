@@ -16,6 +16,9 @@
       ],
       "@firestore/*": [
         "./app/api/database/firestore/*"
+      ],
+      "@repositories/*": [
+        "./app/api/database/repositories/*"
       ]
     },
     "lib": [

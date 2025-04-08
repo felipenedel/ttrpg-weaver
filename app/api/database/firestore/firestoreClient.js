@@ -22,7 +22,9 @@ const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 
 const db = getFirestore(app);
 
-if (process.env.NEXT_PUBLIC_USE_FIREBASE_EMULATOR === "true" && typeof window !== "undefined") {
+//if (process.env.NEXT_PUBLIC_USE_FIREBASE_EMULATOR === "true" && typeof window !== "undefined") {
   connectFirestoreEmulator(db, "localhost", 8080);
   console.info("🔥 Using Firestore Emulator");
-}
+//}
+
+export {db}

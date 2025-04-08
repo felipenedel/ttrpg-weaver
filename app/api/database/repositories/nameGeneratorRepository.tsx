@@ -1,31 +1,49 @@
 import {collection, limit, query, where,} from 'firebase/firestore';
 import {db} from '@firestore/firestoreClient';
-import {getFirstDoc} from "@firestore/getFirstDoc";
+import {getFirstDoc} from '@repositories/getFirstDoc';
+import {toPascalCase} from "@services/pascalCase";
 
-const REFERENCE_TABLES_COLLECTION = 'reference_tables';
-const NAME_GENERATOR_COLLECTION = 'name_generator';
+const LANGUAGES = ["arabic", "chinese", "english", "greek", "indian", "japanese", "latin", "nigerian", "russian", "spanish"];
 
 export interface NameGeneratorType {
   id: string;
-  rollMin: number;
-  rollMax: number;
-  name: string;
+  nameMale: string;
+  nameFemale: string;
+  surname: string;
+  placeName: string;
+  language: string
+}
+
+const getLanguage = (language: string | null) => {
+  return language || LANGUAGES[Math.floor(Math.random() * LANGUAGES.length)];
 }
 
 export const NameGeneratorRepository = {
-  async getRandomName(): Promise<NameGeneratorType> {
-    const roll = Math.floor(Math.random() * 10) + 1;
+  async getRandomName(language: string | null): Promise<NameGeneratorType> {
+    const languageCollection = getLanguage(language);
+    const namesRef = collection(db, `reference_tables/name_generator/languages/${languageCollection}/names`);
+    const placesRef = collection(db, `reference_tables/name_generator/languages/${languageCollection}/places`);
 
-    const q = query(
-      collection(db, REFERENCE_TABLES_COLLECTION, NAME_GENERATOR_COLLECTION, "names"),
-      where('roll_max', '>=', roll),
-      where('roll_min', '<=', roll),
+    const nameRoll = Math.floor(Math.random() * 100) + 1;
+    const placeRoll = Math.floor(Math.random() * 100) + 1;
+
+    const nameQuery = query(
+      namesRef,
+      where('roll_max', '>=', nameRoll),
+      where('roll_min', '<=', nameRoll),
       limit(1)
     );
 
-    return getFirstDoc<NameGeneratorType>(q);
+    const placeQuery = query(
+      placesRef,
+      where('roll_max', '>=', placeRoll),
+      where('roll_min', '<=', placeRoll),
+      limit(1)
+    );
+
+    const nameData = await getFirstDoc<NameGeneratorType>(nameQuery);
+    const placeData = await getFirstDoc<NameGeneratorType>(placeQuery);
+
+    return {...toPascalCase(nameData), ...toPascalCase(placeData), language: languageCollection} as NameGeneratorType;
   },
 };
-
-// (\d+)-(\d+) (\l+) (\l+) (\l+) (.+)
-// { "name_male": "$4", "name_female": "$5", "surname": "$6", "roll_min": $2, "roll_max": $3 },
