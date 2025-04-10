@@ -7,6 +7,7 @@ import {ColorModeToggle} from "@/app/color-mode-toggle";
 export const Sidebar = () => {
   const links = [
     {label: "Home", href: "/"},
+    {label: "Character designer", href: "/char-designer"},
     {label: "Dice roller", href: "/dice-roller"},
     {label: "Name generator", href: "/name-generator"},
     {label: "Changelog", href: "/changelog"},
