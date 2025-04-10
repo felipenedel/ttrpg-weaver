@@ -1,7 +1,7 @@
 "use client"
 
 import {Box, For, Stack, Text} from "@chakra-ui/react"
-import {useVersions} from "@components/version/version_control";
+import {useVersions} from "@/app/changelog/version_control";
 
 export default function Page() {
   const versions = useVersions()

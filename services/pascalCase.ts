@@ -1,12 +1,10 @@
-import {camelCase} from "lodash";
+import _ from "lodash";
 
-export function toPascalCase<T>(obj: Record<string, any>): T {
-  const newObj: Record<string, any> = {};
-  for (const key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      const newKey = camelCase(key);
-      newObj[newKey] = obj[key];
-    }
+export function toCamelCaseDeep(obj: any): any {
+  if (_.isArray(obj)) {
+    return obj.map(toCamelCaseDeep);
+  } else if (_.isObject(obj) && obj !== null) {
+    return _.mapValues(_.mapKeys(obj, (_v, k) => _.camelCase(k)), toCamelCaseDeep);
   }
-  return newObj as T;
+  return obj;
 }

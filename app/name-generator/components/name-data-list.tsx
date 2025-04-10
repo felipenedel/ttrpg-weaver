@@ -2,10 +2,10 @@
 
 import {DataList} from "@chakra-ui/react";
 import React from "react";
-import {NameGeneratorType} from "@api/database/repositories/nameGeneratorRepository";
+import {GeneratedName} from "@/types/name-generator/generated_name_type";
 
 type Props = {
-  nameData: NameGeneratorType | null
+  nameData: GeneratedName | null
 };
 
 const NameDataList = ({nameData}: Props) => {

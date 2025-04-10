@@ -2,7 +2,7 @@
 
 import {Portal, Select} from "@chakra-ui/react";
 import React from "react";
-import {NameGeneratorLanguages} from "./name-generator-languages";
+import {LanguageOptions} from "@/types/name-generator/language_options"; // TODO api?
 
 type Props = {
   setLanguage: (value: string) => void;
@@ -11,7 +11,7 @@ type Props = {
 const LanguageSelector = ({setLanguage}: Props) => {
   return (
     <Select.Root
-      collection={NameGeneratorLanguages}
+      collection={LanguageOptions}
       size="sm"
       width="320px"
       onChange={(e) => setLanguage((e.target as HTMLSelectElement).value)}
@@ -30,7 +30,7 @@ const LanguageSelector = ({setLanguage}: Props) => {
       <Portal>
         <Select.Positioner>
           <Select.Content>
-            {NameGeneratorLanguages.items.map((language) => (
+            {LanguageOptions.items.map((language) => (
               <Select.Item item={language} key={language.value}>
                 {language.label}
                 <Select.ItemIndicator/>

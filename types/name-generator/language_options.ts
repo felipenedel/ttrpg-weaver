@@ -1,6 +1,6 @@
 import {createListCollection} from "@chakra-ui/react";
 
-export const NameGeneratorLanguages = createListCollection({
+export const LanguageOptions = createListCollection({
   "items": [
     {"label": "Arabic", "value": "arabic"},
     {"label": "Chinese", "value": "chinese"},
@@ -14,3 +14,9 @@ export const NameGeneratorLanguages = createListCollection({
     {"label": "Spanish", "value": "spanish"}
   ]
 })
+
+export const randomLanguage = () => {
+  const options = LanguageOptions["items"]
+
+  return options[Math.floor(Math.random() * options.length)].value
+}

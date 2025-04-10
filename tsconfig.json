@@ -5,20 +5,14 @@
     "moduleResolution": "Bundler",
     "skipLibCheck": true,
     "paths": {
-      "@components/*": [
-        "./components/*"
-      ],
-      "@services/*": [
-        "./services/*"
-      ],
       "@api/*": [
         "./app/api/*"
       ],
       "@firestore/*": [
         "./app/api/database/firestore/*"
       ],
-      "@repositories/*": [
-        "./app/api/database/repositories/*"
+      "@/*": [
+        "./*"
       ]
     },
     "lib": [

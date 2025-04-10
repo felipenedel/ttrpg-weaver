@@ -30,7 +30,7 @@ const D6Roller = () => {
   const rollDice = () => {
     const rolls: DiceType[] = []
 
-    const sortedDiceTypes = sortBy(selectedDiceTypes, 'value');
+    const sortedDiceTypes = sortBy(selectedDiceTypes, "value");
     for (const diceType of sortedDiceTypes) {
       const roll = Math.floor((Math.random() * diceType.value) + 1)
 
