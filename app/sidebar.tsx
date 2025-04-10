@@ -1,10 +1,13 @@
 "use client";
 
-import {Box, Button, ClientOnly, Drawer, HStack, Link, Portal, Skeleton, VStack,} from "@chakra-ui/react";
+import {Box, Button, ClientOnly, Drawer, HStack, Link, Portal, Skeleton, Text, VStack} from "@chakra-ui/react";
 import {ChevronRightIcon} from "lucide-react";
 import {ColorModeToggle} from "@/app/color-mode-toggle";
+import LanguageSwitcher from "@/app/language-switcher";
+import {useTranslations} from "use-intl";
 
 export const Sidebar = () => {
+  const t = useTranslations();
   const links = [
     {label: "Home", href: "/"},
     {label: "Dice roller", href: "/dice-roller"},
@@ -58,14 +61,15 @@ export const Sidebar = () => {
               <NavLinks/>
             </Drawer.Body>
             <Drawer.Footer>
-              <HStack justify="flex-start" align="center" w="100%">
+              <VStack justify="flex-start" align="center" w="100%">
                 <Button size="sm" variant="solid">
                   Login
                 </Button>
+                <Text>{t('language')}</Text>
                 <ClientOnly fallback={<Skeleton w="10" h="10" rounded="md"/>}>
                   <ColorModeToggle/>
                 </ClientOnly>
-              </HStack>
+              </VStack>
             </Drawer.Footer>
           </Drawer.Content>
         </Drawer.Positioner>

@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html className={inter.className} suppressHydrationWarning>
-    <head><title></title></head>
+    <head><title>TTRPG Weaver</title></head>
     <body>
     <Provider>{children}</Provider>
     </body>
