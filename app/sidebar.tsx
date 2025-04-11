@@ -1,6 +1,6 @@
 "use client";
 
-import {Box, Button, ClientOnly, Drawer, HStack, Link, Portal, Skeleton, VStack,} from "@chakra-ui/react";
+import {Box, Button, ClientOnly, Drawer, HStack, Link, Portal, Separator, Skeleton, VStack,} from "@chakra-ui/react";
 import {ChevronRightIcon} from "lucide-react";
 import {ColorModeToggle} from "@/app/color-mode-toggle";
 
@@ -8,14 +8,23 @@ export const Sidebar = () => {
   const links = [
     {label: "Home", href: "/"},
     {label: "Character designer", href: "/char-designer"},
+    {label: "Changelog", href: "/changelog"}
+  ];
+
+  const sandboxLinks = [
     {label: "Dice roller", href: "/dice-roller"},
-    {label: "Name generator", href: "/name-generator"},
-    {label: "Changelog", href: "/changelog"},
+    {label: "Name generator", href: "/name-generator"}
   ];
 
   const NavLinks = () => (
-    <VStack align="start" p={4}>
+    <VStack align="start" p={4} w="100%">
       {links.map((link) => (
+        <Link key={link.href} href={link.href}>
+          {link.label}
+        </Link>
+      ))}
+      <Separator w="100%"/>
+      {sandboxLinks.map((link) => (
         <Link key={link.href} href={link.href}>
           {link.label}
         </Link>
@@ -60,7 +69,7 @@ export const Sidebar = () => {
             </Drawer.Body>
             <Drawer.Footer>
               <HStack justify="flex-start" align="center" w="100%">
-                <Button size="sm" variant="solid">
+                <Button size="sm" h="10" variant="solid">
                   Login
                 </Button>
                 <ClientOnly fallback={<Skeleton w="10" h="10" rounded="md"/>}>

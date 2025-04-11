@@ -1,4 +1,4 @@
-import {HStack, IconButton, Table, Text, VStack} from "@chakra-ui/react";
+import {Button, HStack, IconButton, Table, VStack} from "@chakra-ui/react";
 import {CopyX, Dice1, Dice2, Dice3, Dice4, Dice5, Dice6, Shuffle} from "lucide-react";
 import React, {useState} from "react";
 
@@ -98,11 +98,9 @@ export default function AttributeRoller() {
           ))}
         </Table.Body>
       </Table.Root>
-      <IconButton onClick={rollAttributes}>
-        <Shuffle/>
-        <Text>Roll</Text>
-      </IconButton>
+      <Button onClick={rollAttributes} alignSelf="flex-start" size="sm" variant="solid">
+        Roll <Shuffle/>
+      </Button>
     </VStack>
   )
-
 }

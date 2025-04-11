@@ -1,10 +1,11 @@
 "use client";
 
-import {Card, Collapsible, Heading, HStack, IconButton, Input, RadioGroup, Stack, Text, VStack} from "@chakra-ui/react";
-import {Shuffle} from "lucide-react";
+import {Card, Heading, Separator, Stack, VStack} from "@chakra-ui/react";
 import {GeneratedName} from "@/types/name-generator/generated_name_type";
-import {useState} from "react";
-import AttributeRoller from "@/app/char-designer/components/attribute_roller";
+import React, {useState} from "react";
+import HpRoller from "@/app/char-designer/components/hp_roller";
+import CharDetails from "@/app/char-designer/components/char_details";
+import CharAttributes from "@/app/char-designer/components/char_attributes";
 
 export default function Page() {
   const [name, setName] = useState<string>("");
@@ -38,67 +39,37 @@ export default function Page() {
   return (
     <Stack>
       <Heading size="4xl">Char Designer</Heading>
-      <Collapsible.Root>
-        <Collapsible.Trigger paddingY="3">Toggle Collapsible</Collapsible.Trigger>
-        <Collapsible.Content>
-          <Card.Root size="sm">
-            <Card.Header>
-              <Heading size="md">Char Details</Heading>
-            </Card.Header>
-            <Card.Body color="fg.muted">
-              <VStack align="start" gap={4}>
-                <RadioGroup.Root value={gender} onValueChange={(e) => setGender(e.value || "")}>
-                  <HStack gap="6">
-                    {genderOptions.map((item) => (
-                      <RadioGroup.Item key={item.value} value={item.value}>
-                        <RadioGroup.ItemHiddenInput/>
-                        <RadioGroup.ItemIndicator/>
-                        <RadioGroup.ItemText>{item.label}</RadioGroup.ItemText>
-                      </RadioGroup.Item>
-                    ))}
-                  </HStack>
-                </RadioGroup.Root>
-                <HStack w="full">
-                  <Text {...labelStyles}>Name</Text>
-                  <Input value={name} onChange={(e) => setName(e.target.value)}/>
-                  <IconButton onClick={randomizeName}>
-                    <Shuffle/>
-                  </IconButton>
-                </HStack>
-                <HStack w="full">
-                  <Text {...labelStyles}>Goal</Text>
-                  <Input value={goal} onChange={(e) => setGoal(e.target.value)}/>
-                </HStack>
-                <Text>Roll 3d6 and set one to 14 or assign based on a predefined array</Text>
-                <RadioGroup.Root value={assignType} onValueChange={(e) => setAssignType(e.value || "")}>
-                  <HStack gap="6">
-                    {assignOptions.map((item) => (
-                      <RadioGroup.Item key={item.value} value={item.value}>
-                        <RadioGroup.ItemHiddenInput/>
-                        <RadioGroup.ItemIndicator/>
-                        <RadioGroup.ItemText>{item.label}</RadioGroup.ItemText>
-                      </RadioGroup.Item>
-                    ))}
-                  </HStack>
-                </RadioGroup.Root>
-                {
-                  assignType === "assign" && (
-                    <HStack w="full">
-                      <Text {...labelStyles}>Roll</Text>
-                      <Input value={name} onChange={(e) => setName(e.target.value)}/>
-                    </HStack>
-                  )
-                }
-                {
-                  assignType === "roll" && (
-                    <AttributeRoller/>
-                  )
-                }
-              </VStack>
-            </Card.Body>
-          </Card.Root>
-        </Collapsible.Content>
-      </Collapsible.Root>
+      <Separator size="lg"/>
+      <Card.Root size="sm">
+        <Card.Header>
+          <Heading size="xl">Char Details</Heading>
+        </Card.Header>
+        <Card.Body color="fg.muted">
+          <VStack align="start" gap={4}>
+            <CharDetails/>
+          </VStack>
+        </Card.Body>
+      </Card.Root>
+      <Card.Root size="sm">
+        <Card.Header>
+          <Heading size="xl">Attributes</Heading>
+        </Card.Header>
+        <Card.Body color="fg.muted">
+          <VStack align="start" gap={4}>
+            <CharAttributes/>
+          </VStack>
+        </Card.Body>
+      </Card.Root>
+      <Card.Root size="sm">
+        <Card.Header>
+          <Heading size="xl">HP</Heading>
+        </Card.Header>
+        <Card.Body color="fg.muted">
+          <VStack align="start" gap={4}>
+            <HpRoller/>
+          </VStack>
+        </Card.Body>
+      </Card.Root>
     </Stack>
   )
 }
