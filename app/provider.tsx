@@ -1,22 +1,12 @@
 "use client"
 
 import React from "react";
-import {Box, ChakraProvider, createSystem, defaultConfig, Flex} from "@chakra-ui/react"
+import {Box, ChakraProvider, Flex} from "@chakra-ui/react";
 import {ThemeProvider} from "next-themes";
 import {Sidebar} from "@/app/sidebar";
+import {system} from "./theme";
 
 export default function RootLayout(props: { children: React.ReactNode }) {
-  const system = createSystem(defaultConfig, {
-    theme: {
-      tokens: {
-        fonts: {
-          heading: {value: "var(--font-space-grotesk)"},
-          body: {value: "var(--font-space-grotesk)"},
-        },
-      },
-    },
-  })
-
   return (
     <ChakraProvider value={system}>
       <ThemeProvider attribute="class" disableTransitionOnChange>
@@ -38,6 +28,12 @@ export default function RootLayout(props: { children: React.ReactNode }) {
               mx="auto"
               bg="gray.100"
               _dark={{bg: "gray.900"}}
+              position="relative"
+              overflow="hidden"
+              boxShadow="0 0 20px rgba(0, 255, 224, 0.8)"
+              borderRadius="xl"
+              borderWidth="1px"
+              borderColor={"rgba(0, 255, 224, 0.5)"}
             >
               {props.children}
             </Box>
@@ -45,5 +41,5 @@ export default function RootLayout(props: { children: React.ReactNode }) {
         </Flex>
       </ThemeProvider>
     </ChakraProvider>
-  )
+  );
 }
