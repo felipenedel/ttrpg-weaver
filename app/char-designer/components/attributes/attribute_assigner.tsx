@@ -1,4 +1,4 @@
-import {SegmentGroup, Table, Text, VStack} from "@chakra-ui/react";
+import {SegmentGroup, Table, VStack} from "@chakra-ui/react";
 import React, {useState} from "react";
 
 export default function AttributeAssigner() {
