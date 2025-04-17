@@ -8,6 +8,7 @@ export const Sidebar = () => {
   const links = [
     {label: "Home", href: "/"},
     {label: "Character designer", href: "/char-designer"},
+    {label: "One roll helper", href: "/one-roll-generator"},
     {label: "Changelog", href: "/changelog"}
   ];
 

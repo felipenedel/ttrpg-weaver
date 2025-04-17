@@ -8,17 +8,12 @@ import {NameGeneratorLanguage} from "@/types/name-generator/seed_data_type";
 import {GeneratedName} from "@/types/name-generator/generated_name_type";
 import {capitalize} from "lodash";
 
-let cachedData: NameGeneratorLanguage;
-
 function loadNameData(language: string): NameGeneratorLanguage {
-  if (!cachedData) {
-    const filePath = path.join(process.cwd(), "data", "001_names.json");
-    const rawData = fs.readFileSync(filePath, "utf-8");
-    const languageData = toCamelCaseDeep(JSON.parse(rawData));
-    cachedData = languageData[language] as NameGeneratorLanguage;
-  }
+  const filePath = path.join(process.cwd(), "data", "names.json");
+  const rawData = fs.readFileSync(filePath, "utf-8");
+  const languageData = toCamelCaseDeep(JSON.parse(rawData));
 
-  return cachedData;
+  return languageData[language] as NameGeneratorLanguage;
 }
 
 export function generateData(languageParam: string | null): GeneratedName {
