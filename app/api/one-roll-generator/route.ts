@@ -24,8 +24,6 @@ export function generateData(typeParam: string) {
     const oneRollDataFunction = mapOneRollData(typeParam);
     const key = oneRollDataFunction(roll.type);
 
-    console.log(`Rolling ${roll.type} for ${typeParam}: ${roll.roll}`);
-
     acc[toCamelCase(key)] = data[key][roll.roll];
     return acc;
   }, {});
